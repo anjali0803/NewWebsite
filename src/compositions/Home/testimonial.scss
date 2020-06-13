@@ -1,0 +1,277 @@
+.slide-1, .slide-2{
+  height: 100%;
+  display: none;
+  min-width: 80%;
+  justify-content: center;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 10vh;
+}
+
+
+@media(mmax-width: 800px){
+  .mini-header-t{
+    font-size: 16px !important;
+  }
+}
+
+.mini-header-t{
+  padding-top: 8vh;
+  font-size: 20px;
+  color: #0B132B;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+@media(max-width: 800px){
+  .person-img{
+    margin: 1vh auto !important;
+
+    &:after{
+      bottom: -1px !important;
+      display: none;
+      border: 0px solid #131B23 !important;
+    }
+  }
+}
+
+@media(max-width: 500px){
+  .person-img{
+    margin: 4vh auto !important;
+
+    &:after{
+      bottom: -1px !important;
+      display: none;
+      border: 0px solid #131B23 !important;
+    }
+  }
+}
+
+.person-img{
+  height: 200px;
+  width: 200px;
+  // border: 1px solid red;
+  margin: 5% auto;
+  border-radius: 50%;
+  border-bottom: 1px solid black;
+  box-shadow: 0px 5px 50px rgba(0,0,0,0.4);
+
+  &:after{
+    content: " ";
+    display: block;
+    position: relative;
+    bottom: -10px;
+    left: 25%;
+    border: 1px solid #131B23;
+    width: 50%;
+  }
+
+  .testimonial-img-1, .testimonial-img-2{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-size: cover;
+  }
+
+  .testimonial-img-1{
+    background-image: url(https://matsci.ai/sandeep.png);
+  }
+
+  .testimonial-img-2{
+    background-image: url(https://matsci.ai/gustavo.jpeg);
+  }
+
+}
+
+.testimonial{
+  margin: 5% auto;
+  margin-top: 0;
+  font-size: 48px;
+  // padding-top: 5%;
+  font-weight: 500;
+  color: #0B132B;
+  text-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+
+  &:after{
+    content: " ";
+    display: block;
+    position: relative;
+    bottom: -10px;
+    left: 44%;
+    border: 2px solid #131B23;
+    width: 12%;
+  }
+}
+
+@media(max-width: 800px){
+  .testimonial-text{
+    // height: 200px;
+    width: 100% !important;
+    font-size: 16px !important;
+    font-weight: 300;
+    margin: 1% auto !important;
+  
+    padding-bottom: 30px;
+    border-bottom: 0.5px solid black !important;
+  
+    .quotes-sym{
+      font-size: 16px !important;
+    }
+  }
+}
+
+@media(max-width: 500px){
+  .testimonial-text{
+    // height: 200px;
+    width: 100% !important;
+    font-size: 12px !important;
+    font-weight: 300;
+    margin: 1% auto !important;
+  
+    padding-bottom: 20px;
+    border-bottom: 0.5px solid black !important;
+  
+    .quotes-sym{
+      font-size: 16px !important;
+    }
+  }
+}
+
+.testimonial-text{
+  // height: 200px;
+  width: 70%;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 5px;
+  // border: 1px solid red;
+  margin: 2% auto;
+  // text-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+
+  .quotes-sym{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 800px){
+  .person-bio{
+    // height: 200px;
+  width: 100% !important;
+
+  
+    .name, .position, .company{
+      text-align: center;
+    }
+  
+    .name{
+      font-size: 24px !important;
+    
+    }
+  
+    .position{
+      font-size: 18px !important;
+    }
+  
+    .company{
+      font-size: 16px !important;
+    }
+  }
+}
+
+@media (max-width: 500px){
+  .person-bio{
+    // height: 200px;
+  width: 100% !important;
+
+  
+    .name, .position, .company{
+      text-align: center;
+    }
+  
+    .name{
+      font-size: 20px !important;
+    
+    }
+  
+    .position{
+      font-size: 16px !important;
+    }
+  
+    .company{
+      font-size: 12px !important;
+    }
+  }
+}
+.person-bio{
+  // height: 200px;
+  width: 40%;
+  border-radius: 5px;
+  // border: 1px solid red;
+  margin: 2% auto;
+  margin-bottom: 0;
+
+  .name, .position, .company{
+    text-align: center;
+  }
+
+  .name{
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .position{
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .company{
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
+
+.active{
+  display: block;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  top: -405px;
+  width: 50px;
+  height: 50px;
+  padding-left: 12.5px;
+  color: grey;
+  font-size: 32px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.prev{
+  float: left;
+  margin-left: 5%;
+}
+
+.next {
+  float: right;
+  margin-right: 5%;
+  padding-left: 17px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.2);
+  color: rgba($color: #000000, $alpha: 0.6);
+}
+
+
+
+
+// ----------------------------------
+
